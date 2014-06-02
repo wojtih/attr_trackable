@@ -18,7 +18,7 @@ Or install it yourself as:
 
 ## Usage
 
-For example if Yu want to track first_name and last_name attributes of Your model
+For example if You want to track first_name and last_name attributes of Your model
 ```ruby
 class Person < ActiveRecord::Base
   attr_trackable :first_name, :last_name
