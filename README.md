@@ -1,6 +1,6 @@
 # AttrTrackable
 
-TODO: Write a gem description
+Track attributes changes in AR models
 
 ## Installation
 
@@ -18,7 +18,14 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+For example if Yu want to track first_name and last_name attributes of Your model
+`class Person < ActiveRecord::Base
+  attr_trackable :first_name, :last_name
+end`
+
+To fetch changes
+
+`Person.changes_history :first_name`
 
 ## Contributing
 
